@@ -47,6 +47,10 @@ class Map extends Component {
     this.props.onUpdate(Object.assign({}, place, { location: [lngLat.lng, lngLat.lat] }));
   };
 
+  addPlace = (evt, { lngLat }) => {
+    console.log('point', test);
+  };
+
   render() {
     const { location, place, zoom } = this.state;
     const { places } = this.props;
@@ -58,6 +62,7 @@ class Map extends Component {
         zoom={zoom}
         onClick={this.onDrag}
         onDrag={this.onDrag}
+        onContextMenu={this.addPlace}
         containerStyle={{
           height: "100vh",
           width: "100vw"
@@ -66,7 +71,7 @@ class Map extends Component {
           places.map(p => (
             <Layer
               key={p.id}
-              id={'' + p.id}
+              id={`${p.id}`}
               type="symbol"
               images={IMAGES}
               layout={{
@@ -80,6 +85,7 @@ class Map extends Component {
                 coordinates={p.location}
                 onClick={e => this.handleClick(e, p)}
                 draggable
+                onDragStart={this.onDrag}
                 onDragEnd={e => this.onDragEnd(e, p)}
               />
             </Layer>
