@@ -22,7 +22,6 @@ class Map extends Component {
 
   componentDidMount() {
     if (navigator.geolocation) {
-      console.log('hooli');
       navigator.geolocation.getCurrentPosition(position => (
         this.setState({ location: [position.coords.longitude, position.coords.latitude] })
       ), err => console.log('err', err), { timeout: 10000 });
@@ -39,7 +38,8 @@ class Map extends Component {
     this.setState({
       location: feature.geometry.coordinates,
       zoom: [14],
-      place
+      place,
+      type: EDIT_ACTION
     });
   };
 
@@ -61,7 +61,6 @@ class Map extends Component {
   };
 
   handleEdit = () => {
-    this.setState({ type: EDIT_ACTION });
     this.toggleForm(true);
   };
 
@@ -76,20 +75,19 @@ class Map extends Component {
   toggleConfirm = confirm => this.setState({ confirm });
 
   handleSubmit = (place) => {
-    if (this.type === ADD_ACTION) {
+    if (this.state.type === ADD_ACTION) {
       this.props.onAdd(place);
     } else {
       this.props.onUpdate(place);
     }
 
+    this.setState({ place: undefined });
     this.toggleForm(false);
   };
 
   render() {
     const { location, place, zoom, type, confirm, form } = this.state;
     const { places } = this.props;
-
-    console.log('it renders', this.state);
 
     return (
       <React.Fragment>

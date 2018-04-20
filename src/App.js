@@ -41,6 +41,12 @@ class App extends Component {
     this.setState({ place });
   };
 
+  handleAddPlace = (place) => {
+    place.id = Math.floor(Math.random() * 100000000);
+
+    this.setState(prevState => ({ places: [...prevState.places, place] }));
+  };
+
   handlePlaceUpdate = (place) => {
     const index = this.state.places.findIndex(p => p.id === place.id);
 
@@ -76,8 +82,8 @@ class App extends Component {
         <Map
           places={places}
           place={place}
+          onAdd={this.handleAddPlace}
           onUpdate={this.handlePlaceUpdate}
-          onEdit={this.handlePlaceEdit}
           onDelete={this.handlePlaceRemove}
         />
         <Button
