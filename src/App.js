@@ -8,7 +8,7 @@ import HelpDialog from './components/HelpDialog';
 const styles = theme => ({
   button: {
     margin: theme.spacing.unit * 2,
-    position: 'absolute',
+    position: 'fixed',
     bottom: 0,
     right: 0,
   }
@@ -24,6 +24,9 @@ class App extends Component {
     search: '',
     place: null,
     help: false,
+    confirm: false,
+    form: false,
+    selected: null,
   };
 
   componentDidMount() {
@@ -50,6 +53,17 @@ class App extends Component {
     }))
   };
 
+  handlePlaceRemove = (place) => {
+    const index = this.state.places.findIndex(p => p.id === place.id);
+
+    this.setState(prevState => ({
+      places: [
+        ...prevState.places.slice(0, index),
+        ...prevState.places.slice(index + 1)
+      ]
+    }));
+  };
+
   toggleHelp = help => this.setState({ help });
 
   render() {
@@ -59,7 +73,13 @@ class App extends Component {
     return (
       <div className="App">
         <MainAppBar places={this.state.places} onFilter={this.handleFilter} />
-        <Map places={places} place={place} onUpdate={this.handlePlaceUpdate} />
+        <Map
+          places={places}
+          place={place}
+          onUpdate={this.handlePlaceUpdate}
+          onEdit={this.handlePlaceEdit}
+          onDelete={this.handlePlaceRemove}
+        />
         <Button
           variant="fab"
           color="primary"
