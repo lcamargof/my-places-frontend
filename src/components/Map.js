@@ -99,8 +99,8 @@ class Map extends Component {
           onDrag={this.onDrag}
           onContextMenu={this.addPlace}
           containerStyle={{
-            height: "100vh",
-            width: "100vw"
+            height: "calc(100vh - 64px)",
+            width: "100vw",
           }}>
           {
             places.map(p => (
