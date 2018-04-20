@@ -22,15 +22,15 @@ class Map extends Component {
 
   componentDidMount() {
     if (navigator.geolocation) {
+      console.log('hooli');
       navigator.geolocation.getCurrentPosition(position => (
         this.setState({ location: [position.coords.longitude, position.coords.latitude] })
-      ));
+      ), err => console.log('err', err), { timeout: 10000 });
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.place !== this.props.place && nextProps.place !== this.state.place) {
-      console.log('que crees? cambio', nextProps.place);
       this.setState({ place: nextProps.place, location: nextProps.place.location, zoom: [14] });
     }
   }
@@ -88,6 +88,8 @@ class Map extends Component {
   render() {
     const { location, place, zoom, type, confirm, form } = this.state;
     const { places } = this.props;
+
+    console.log('it renders', this.state);
 
     return (
       <React.Fragment>

@@ -17,9 +17,9 @@ const styles = theme => ({
 class App extends Component {
   state = {
     places: [
-      { id: 1, name: 'Test', location: [-103.40932570000001, 20.6713195] },
-      { id: 2, name: 'Test 2', location: [-103.41932570000001, 20.6713195] },
-      { id: 3, name: 'Test 3', location: [-103.40932570000001, 20.6913195] },
+      { id: 1, name: 'Awesome place', open: '00:00', close: '23:00', description: 'asdf', location: [-103.40932570000001, 20.6713195] },
+      { id: 2, name: 'OH GOD', open: '15:00', close: '16:00', description: 'asdf', location: [-103.41932570000001, 20.6713195] },
+      { id: 3, name: 'ROCKET!', open: '19:00', close: '20:00', description: 'adsdf', location: [-103.40932570000001, 20.6913195] },
     ],
     search: '',
     place: null,
