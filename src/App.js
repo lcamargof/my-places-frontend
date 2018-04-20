@@ -3,6 +3,7 @@ import { Button, withStyles } from 'material-ui';
 import HelpIcon from '@material-ui/icons/HelpOutline';
 import MainAppBar from './components/MainAppBar';
 import Map from './components/Map';
+import HelpDialog from './components/HelpDialog';
 
 const styles = theme => ({
   button: {
@@ -22,6 +23,7 @@ class App extends Component {
     ],
     search: '',
     place: null,
+    help: false,
   };
 
   componentDidMount() {
@@ -48,17 +50,26 @@ class App extends Component {
     }))
   };
 
+  toggleHelp = help => this.setState({ help });
+
   render() {
     const { classes } = this.props;
-    const { places, place } = this.state;
+    const { places, place, help } = this.state;
 
     return (
       <div className="App">
         <MainAppBar places={this.state.places} onFilter={this.handleFilter} />
         <Map places={places} place={place} onUpdate={this.handlePlaceUpdate} />
-        <Button variant="fab" color="primary" aria-label="help" className={classes.button}>
+        <Button
+          variant="fab"
+          color="primary"
+          aria-label="help"
+          className={classes.button}
+          onClick={() => this.toggleHelp(true)}
+        >
           <HelpIcon />
         </Button>
+        <HelpDialog open={help} onClose={() => this.toggleHelp(false)} />
       </div>
     );
   }
