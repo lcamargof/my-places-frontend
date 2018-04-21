@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Button, withStyles } from 'material-ui';
 import io from "socket.io-client";
 import Axios from 'axios';
@@ -18,7 +19,7 @@ const styles = theme => ({
   }
 });
 
-class App extends Component {
+export class App extends Component {
   state = {
     places: [],
     search: '',
@@ -31,23 +32,31 @@ class App extends Component {
     message: '',
   };
 
-  async componentDidMount() {
-    // Listen to actions
+  componentDidMount() {
+    // Listen to socket actions
     this.socketActions();
 
     // Fetch places
+    this.getPlaces();
+  }
+
+  async getPlaces() {
     try {
       const { data } = await Axios.get(`${API_URL}/api/places`);
 
       if (data.success) {
-         this.setState({ places: data.data.map(p => {
-           p.location = [+p.lon, +p.lat];
+        // Map array creating location prop base on lon and lat
+        this.setState({ places: data.data.map(p => {
+            p.location = [+p.lon, +p.lat];
 
-           return p;
-         }) });
+            return p;
+          }) });
+      } else {
+        this.showSnackbar('Places overflow :(');
       }
     } catch (e) {
       console.error('error fetching places', e);
+      this.showSnackbar('Server error please refresh :(');
     }
   }
 
@@ -63,6 +72,7 @@ class App extends Component {
     socket.on('remove', this.removePlace);
   };
 
+  // Handle SearchPlace filter
   handleFilter = (place) => {
     this.setState({ place });
   };
@@ -135,8 +145,10 @@ class App extends Component {
     }
   };
 
+  // Toggle help dialog
   toggleHelp = help => this.setState({ help });
 
+  // Snackbar actions
   closeSnackbar = () => this.setState({ snackbar: false });
 
   showSnackbar = (message) => {
@@ -161,6 +173,7 @@ class App extends Component {
           variant="fab"
           color="primary"
           aria-label="help"
+          id="help"
           className={classes.button}
           onClick={() => this.toggleHelp(true)}
         >
@@ -172,5 +185,9 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(App);

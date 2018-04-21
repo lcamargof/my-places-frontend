@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: HelpDialog Should render correctly 1`] = `
+<WithStyles(Dialog)
+  aria-labelledby="help-dialog"
+  onClose={[Function]}
+  open={true}
+>
+  <WithStyles(DialogTitle)>
+    Instructions
+  </WithStyles(DialogTitle)>
+  <WithStyles(DialogContent)>
+    <WithStyles(DialogContentText)>
+      Easy instructions to use my places!
+      <ul>
+        <li>
+          Right click on the map to add a place
+        </li>
+        <li>
+          Drag the place to change their location
+        </li>
+        <li>
+          Click on the place to know more about it
+        </li>
+        <li>
+          When you click on a place, you can edit or remove it, do as you wish!
+        </li>
+        <li>
+          Enjoy using myPlaces
+        </li>
+      </ul>
+    </WithStyles(DialogContentText)>
+  </WithStyles(DialogContent)>
+</WithStyles(Dialog)>
+`;

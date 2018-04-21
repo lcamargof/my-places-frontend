@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ConfirmDialog Snapshots Should render correctly 1`] = `
+<WithStyles(Dialog)
+  aria-describedby="alert-dialog-description"
+  aria-labelledby="alert-dialog-title"
+  onClose={[Function]}
+  open={true}
+>
+  <WithStyles(DialogTitle)
+    id="alert-dialog-title"
+  >
+     Remove a place :(
+  </WithStyles(DialogTitle)>
+  <WithStyles(DialogContent)>
+    <WithStyles(DialogContentText)
+      id="alert-dialog-description"
+    >
+      Are you sure you want to remove "
+      test
+      " from your list of places?
+    </WithStyles(DialogContentText)>
+  </WithStyles(DialogContent)>
+  <WithStyles(DialogActions)>
+    <WithStyles(Button)
+      id="confirm-cancel"
+      onClick={[Function]}
+    >
+      Cancel
+    </WithStyles(Button)>
+    <WithStyles(Button)
+      autoFocus={true}
+      color="primary"
+      id="confirm-delete"
+      onClick={[Function]}
+    >
+      DELETE
+    </WithStyles(Button)>
+  </WithStyles(DialogActions)>
+</WithStyles(Dialog)>
+`;

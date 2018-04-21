@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: AppSnackbar Should render correctly 1`] = `
+<WithStyles(Snackbar)
+  SnackbarContentProps={
+    Object {
+      "aria-describedby": "snackbar-msg",
+    }
+  }
+  action={
+    Array [
+      <WithStyles(IconButton)
+        aria-label="Close"
+        className={undefined}
+        color="inherit"
+        id="close-snackbar"
+        onClick={[Function]}
+    >
+        <pure(Close) />
+    </WithStyles(IconButton)>,
+    ]
+  }
+  anchorOrigin={
+    Object {
+      "horizontal": "left",
+      "vertical": "bottom",
+    }
+  }
+  autoHideDuration={6000}
+  message={
+    <span
+      id="snackbar-msg"
+    >
+      test
+    </span>
+  }
+  onClose={[Function]}
+  open={true}
+/>
+`;

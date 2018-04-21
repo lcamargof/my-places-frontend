@@ -10,7 +10,7 @@ const styles = theme => ({
   },
 });
 
-const AppSnackbar = ({ classes, text, onClose, open }) => (
+export const AppSnackbar = ({ classes, text, onClose, open }) => (
   <Snackbar
     anchorOrigin={{
       vertical: 'bottom',
@@ -27,6 +27,7 @@ const AppSnackbar = ({ classes, text, onClose, open }) => (
       <IconButton
         key="close"
         aria-label="Close"
+        id="close-snackbar"
         color="inherit"
         className={classes.close}
         onClick={onClose}

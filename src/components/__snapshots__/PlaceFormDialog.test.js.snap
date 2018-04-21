@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: PlaceFormDialog Snapshots Should render correctly (ADD) 1`] = `
+<WithStyles(Dialog)
+  aria-describedby="alert-dialog-description"
+  aria-labelledby="alert-dialog-title"
+  onClose={[Function]}
+>
+  <WithStyles(DialogTitle)
+    id="alert-dialog-title"
+  >
+    Add your place!
+  </WithStyles(DialogTitle)>
+  <WithStyles(DialogContent)>
+    <form
+      autoComplete="off"
+      id="place-form"
+      noValidate={true}
+      onSubmit={[Function]}
+    >
+      <TextField
+        error={false}
+        fullWidth={true}
+        helperText=""
+        id="name"
+        label="Name"
+        margin="normal"
+        onChange={[Function]}
+        placeholder="I'm sure it will be a cool name"
+        required={false}
+        select={false}
+        value=""
+      />
+      <TextField
+        error={false}
+        fullWidth={true}
+        helperText=""
+        id="description"
+        label="Description"
+        margin="normal"
+        multiline={true}
+        onChange={[Function]}
+        placeholder="Describe it!"
+        required={false}
+        select={false}
+        value=""
+      />
+      <div>
+        <TextField
+          error={false}
+          fullWidth={true}
+          helperText=""
+          id="open"
+          label="Open"
+          margin="normal"
+          onChange={[Function]}
+          placeholder="12:00"
+          required={false}
+          select={false}
+          type="time"
+          value="08:00"
+        />
+        <TextField
+          error={false}
+          fullWidth={true}
+          helperText=""
+          id="close"
+          label="Close"
+          margin="normal"
+          onChange={[Function]}
+          placeholder="23:00"
+          required={false}
+          select={false}
+          type="time"
+          value="20:00"
+        />
+      </div>
+    </form>
+  </WithStyles(DialogContent)>
+  <WithStyles(DialogActions)>
+    <WithStyles(Button)
+      id="close-place-form"
+      onClick={[Function]}
+    >
+      Cancel
+    </WithStyles(Button)>
+    <WithStyles(Button)
+      color="primary"
+      id="submit-place-form"
+      onClick={[Function]}
+    >
+      SUBMIT
+    </WithStyles(Button)>
+  </WithStyles(DialogActions)>
+</WithStyles(Dialog)>
+`;
+
+exports[`Component: PlaceFormDialog Snapshots Should render correctly (EDIT) 1`] = `
+<WithStyles(Dialog)
+  aria-describedby="alert-dialog-description"
+  aria-labelledby="alert-dialog-title"
+  onClose={[Function]}
+>
+  <WithStyles(DialogTitle)
+    id="alert-dialog-title"
+  >
+    Edit your place :)
+  </WithStyles(DialogTitle)>
+  <WithStyles(DialogContent)>
+    <form
+      autoComplete="off"
+      id="place-form"
+      noValidate={true}
+      onSubmit={[Function]}
+    >
+      <TextField
+        error={false}
+        fullWidth={true}
+        helperText=""
+        id="name"
+        label="Name"
+        margin="normal"
+        onChange={[Function]}
+        placeholder="I'm sure it will be a cool name"
+        required={false}
+        select={false}
+        value=""
+      />
+      <TextField
+        error={false}
+        fullWidth={true}
+        helperText=""
+        id="description"
+        label="Description"
+        margin="normal"
+        multiline={true}
+        onChange={[Function]}
+        placeholder="Describe it!"
+        required={false}
+        select={false}
+        value=""
+      />
+      <div>
+        <TextField
+          error={false}
+          fullWidth={true}
+          helperText=""
+          id="open"
+          label="Open"
+          margin="normal"
+          onChange={[Function]}
+          placeholder="12:00"
+          required={false}
+          select={false}
+          type="time"
+          value="08:00"
+        />
+        <TextField
+          error={false}
+          fullWidth={true}
+          helperText=""
+          id="close"
+          label="Close"
+          margin="normal"
+          onChange={[Function]}
+          placeholder="23:00"
+          required={false}
+          select={false}
+          type="time"
+          value="20:00"
+        />
+      </div>
+    </form>
+  </WithStyles(DialogContent)>
+  <WithStyles(DialogActions)>
+    <WithStyles(Button)
+      id="close-place-form"
+      onClick={[Function]}
+    >
+      Cancel
+    </WithStyles(Button)>
+    <WithStyles(Button)
+      color="primary"
+      id="submit-place-form"
+      onClick={[Function]}
+    >
+      SUBMIT
+    </WithStyles(Button)>
+  </WithStyles(DialogActions)>
+</WithStyles(Dialog)>
+`;

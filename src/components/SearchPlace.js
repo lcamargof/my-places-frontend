@@ -81,40 +81,38 @@ const styles = theme => ({
   },
 });
 
-const SearchPlace = ({ classes, places, onFilter }) => {
-  return (
-    <div>
-      <Downshift onChange={onFilter} itemToString={item => item ? item.name : ''}>
-        {({ getInputProps, getItemProps, isOpen, inputValue, selectedItem, highlightedIndex }) => (
-          <div className={classes.container}>
-            {renderInput({
-              fullWidth: true,
-              classes,
-              InputProps: getInputProps({
-                placeholder: 'Find your place!',
-                id: 'search',
-                startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment>,
-              }),
-            })}
-            {isOpen ? (
-              <Paper className={classes.paper} square>
-                {getSuggestions(places, inputValue).map((suggestion, index) =>
-                  renderSuggestion({
-                    suggestion,
-                    index,
-                    itemProps: getItemProps({ item: suggestion }),
-                    highlightedIndex,
-                    selectedItem,
-                  }),
-                )}
-              </Paper>
-            ) : null}
-          </div>
-        )}
-      </Downshift>
-    </div>
-  );
-};
+export const SearchPlace = ({ classes, places, onFilter }) => (
+  <div>
+    <Downshift onChange={onFilter} itemToString={item => item ? item.name : ''}>
+      {({ getInputProps, getItemProps, isOpen, inputValue, selectedItem, highlightedIndex }) => (
+        <div className={classes.container}>
+          {renderInput({
+            fullWidth: true,
+            classes,
+            InputProps: getInputProps({
+              placeholder: 'Find your place!',
+              id: 'search',
+              startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment>,
+            }),
+          })}
+          {isOpen ? (
+            <Paper className={classes.paper} square>
+              {getSuggestions(places, inputValue).map((suggestion, index) =>
+                renderSuggestion({
+                  suggestion,
+                  index,
+                  itemProps: getItemProps({ item: suggestion }),
+                  highlightedIndex,
+                  selectedItem,
+                }),
+              )}
+            </Paper>
+          ) : null}
+        </div>
+      )}
+    </Downshift>
+  </div>
+);
 
 SearchPlace.propTypes = {
   classes: PropTypes.object.isRequired,

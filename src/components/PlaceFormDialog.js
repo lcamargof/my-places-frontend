@@ -14,6 +14,7 @@ const styles = () => ({
   },
 });
 
+// Default state for easy state reset
 const defaultState = {
   id: undefined,
   name: '',
@@ -27,13 +28,16 @@ const defaultState = {
   location: [],
 };
 
-class PlaceFormDialog extends Component {
+export class PlaceFormDialog extends Component {
 
   state = { ...defaultState };
 
   componentWillReceiveProps(nextProps) {
+    // If the dialog is open, don't change state on props
     if (nextProps.open !== this.props.open) return;
 
+    // If the type is ADD use the default state + location
+    // Else get the selected place to edit
     if (nextProps.type === ADD_ACTION) {
       this.setState({ ...defaultState, location: nextProps.place.location });
     } else {
@@ -106,7 +110,7 @@ class PlaceFormDialog extends Component {
       >
         <DialogTitle id="alert-dialog-title">{title}</DialogTitle>
         <DialogContent>
-          <form onSubmit={this.handleSubmit} noValidate autoComplete="off">
+          <form onSubmit={this.handleSubmit} id="place-form" noValidate autoComplete="off">
             <TextField
               id="name"
               label="Name"
@@ -160,10 +164,10 @@ class PlaceFormDialog extends Component {
           </form>
         </DialogContent>
         <DialogActions>
-          <Button onClick={onClose}>
+          <Button id="close-place-form" onClick={onClose}>
             Cancel
           </Button>
-          <Button onClick={this.handleSubmit} color="primary">
+          <Button id="submit-place-form" onClick={this.handleSubmit} color="primary">
             SUBMIT
           </Button>
         </DialogActions>

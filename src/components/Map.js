@@ -21,6 +21,9 @@ class Map extends Component {
   };
 
   componentDidMount() {
+    // Get current client position
+    // It throw if it takes more than 10 seconds because if it happens after
+    // It creates a weird transition
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => (
         this.setState({ location: [position.coords.longitude, position.coords.latitude] })
@@ -29,6 +32,7 @@ class Map extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    // React when the user filter a place using the search bar and set it active
     if (nextProps.place !== this.props.place && nextProps.place !== this.state.place) {
       this.setState({ place: nextProps.place, location: nextProps.place.location, zoom: [14] });
     }

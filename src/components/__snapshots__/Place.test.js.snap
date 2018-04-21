@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Place Snapshots Should render correctly 1`] = `
+<div>
+  <h2
+    className=""
+  >
+    test
+  </h2>
+  <p />
+  <div>
+    <WithStyles(IconButton)
+      aria-label="Edit"
+      id="place-edit"
+      onClick={[Function]}
+    >
+      <pure(Edit) />
+    </WithStyles(IconButton)>
+    <WithStyles(IconButton)
+      aria-label="Delete"
+      id="place-delete"
+      onClick={[Function]}
+    >
+      <pure(Delete) />
+    </WithStyles(IconButton)>
+  </div>
+</div>
+`;

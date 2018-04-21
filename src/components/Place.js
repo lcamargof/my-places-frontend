@@ -39,7 +39,7 @@ const styles = () => ({
   },
 });
 
-const Place = ({ classes, place, onDelete, onEdit }) => {
+export const Place = ({ classes, place, onDelete, onEdit }) => {
 
   const open = moment().isBetween(moment(place.open, 'HH:mm'), moment(place.close, 'HH:mm'), 'hours', '[]');
 
@@ -50,10 +50,10 @@ const Place = ({ classes, place, onDelete, onEdit }) => {
       </h2>
       <p className={classes.description}>{ place.description }</p>
       <div className={classes.btnContainer}>
-        <IconButton onClick={onEdit} className={classes.button} aria-label="Edit">
+        <IconButton id="place-edit" onClick={onEdit} className={classes.button} aria-label="Edit">
           <EditIcon />
         </IconButton>
-        <IconButton onClick={onDelete} className={classes.button} aria-label="Delete">
+        <IconButton id="place-delete" onClick={onDelete} className={classes.button} aria-label="Delete">
           <RemoveIcon />
         </IconButton>
       </div>

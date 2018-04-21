@@ -16,10 +16,10 @@ const ConfirmDialog = ({ place, open, onClose, onConfirm }) => (
       </DialogContentText>
     </DialogContent>
     <DialogActions>
-      <Button onClick={onClose}>
+      <Button id="confirm-cancel" onClick={onClose}>
         Cancel
       </Button>
-      <Button onClick={onConfirm} color="primary" autoFocus>
+      <Button id="confirm-delete" onClick={onConfirm} color="primary" autoFocus>
         DELETE
       </Button>
     </DialogActions>

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: MainAppBar Should render correctly 1`] = `
+<WithStyles(AppBar)
+  color="default"
+  position="static"
+>
+  <WithStyles(Toolbar)>
+    <WithStyles(Typography)
+      color="inherit"
+      variant="title"
+    >
+      My Places
+    </WithStyles(Typography)>
+    <WithStyles(Component)
+      onFilter={[Function]}
+      places={Array []}
+    />
+  </WithStyles(Toolbar)>
+</WithStyles(AppBar)>
+`;

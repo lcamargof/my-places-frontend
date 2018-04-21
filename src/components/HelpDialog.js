@@ -1,12 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Dialog, DialogContent, DialogContentText, DialogTitle, withStyles } from 'material-ui';
+import { Dialog, DialogContent, DialogContentText, DialogTitle } from 'material-ui';
 
-const styles = () => ({
-
-});
-
-const HelpDialog = ({ classes, open, onClose }) => (
+const HelpDialog = ({ open, onClose }) => (
   <Dialog onClose={onClose} open={open} aria-labelledby="help-dialog">
     <DialogTitle>Instructions</DialogTitle>
     <DialogContent>
@@ -25,9 +21,8 @@ const HelpDialog = ({ classes, open, onClose }) => (
 );
 
 HelpDialog.propTypes = {
-  classes: PropTypes.object.isRequired,
   open: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
 };
 
-export default withStyles(styles)(HelpDialog)
+export default HelpDialog;

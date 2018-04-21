@@ -8,7 +8,7 @@ const styles = () => ({
   flex: { flex: 1 },
 });
 
-const MainAppBar = ({ classes, ...props }) => (
+export const MainAppBar = ({ classes, ...props }) => (
   <AppBar position="static" color="default">
     <Toolbar>
       <Typography className={classes.flex} variant="title" color="inherit">

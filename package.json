@@ -5,10 +5,15 @@
   "dependencies": {
     "@material-ui/icons": "^1.0.0-beta.42",
     "axios": "^0.18.0",
+    "axios-mock-adapter": "^1.15.0",
     "classnames": "^2.2.5",
     "downshift": "^1.31.10",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "mapbox-gl": "^0.44.2",
     "material-ui": "^1.0.0-beta.42",
+    "mock-socket": "^7.1.0",
     "moment": "^2.22.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
@@ -21,6 +26,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "update:snapshots": "jest --updateSnapshot"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3"
   }
 }
