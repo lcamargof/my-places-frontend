@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc0f62f8-c87f-497f-9251-20c8e3e95762" name="Default" comment="Finish frontend">
+    <list default="true" id="cc0f62f8-c87f-497f-9251-20c8e3e95762" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AppSnackbar.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Map.js" afterPath="$PROJECT_DIR$/src/components/Map.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Snackbar.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/utils/config.js" afterPath="$PROJECT_DIR$/src/utils/config.js" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,14 +22,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5006188">
+    <splitter split-orientation="horizontal" split-proportion="0.34653464">
       <split-first>
         <leaf>
           <file leaf-file-name="Place.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Place.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-376">
-                  <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+                <state relative-caret-position="312">
+                  <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -31,11 +37,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Map.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Map.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Map.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="97" column="31" lean-forward="true" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+                <state relative-caret-position="258">
+                  <caret line="85" column="4" lean-forward="true" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -43,11 +49,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/utils/config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="69" lean-forward="true" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
                   <folding />
                 </state>
               </provider>
@@ -63,24 +69,24 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="AppSnackbar.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/AppSnackbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/utils/constants.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
                   <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HelpDialog.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/HelpDialog.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -139,20 +145,8 @@
             <entry file="file://$PROJECT_DIR$/src/utils/images.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -160,10 +154,24 @@
           <file leaf-file-name="PlaceFormDialog.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/PlaceFormDialog.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+                <state relative-caret-position="63">
+                  <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+                  <folding>
+                    <marker date="1524272350153" expanded="true" signature="3695:4375" ph="..." />
+                    <marker date="1524272350153" expanded="true" signature="3788:3974" ph="..." />
+                    <marker date="1524272350153" expanded="true" signature="3991:4127" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -172,20 +180,8 @@
           <file leaf-file-name="ConfirmDialog.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/ConfirmDialog.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Snackbar.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Snackbar.js">
-              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -195,7 +191,7 @@
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="195">
-                  <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+                  <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -217,6 +213,9 @@
       <find>open</find>
       <find>new</find>
       <find>place</find>
+      <find>fields</find>
+      <find>API_URL</find>
+      <find>Snackbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/config/config.js" />
         <option value="$PROJECT_DIR$/src/utils/utils.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/utils/config.js" />
         <option value="$PROJECT_DIR$/src/assets/PlaceIcon.svg" />
         <option value="$PROJECT_DIR$/src/components/MainAppBar.js" />
         <option value="$PROJECT_DIR$/src/components/HelpDialog.js" />
@@ -239,8 +237,11 @@
         <option value="$PROJECT_DIR$/src/components/SearchPlace.js" />
         <option value="$PROJECT_DIR$/src/components/Place.js" />
         <option value="$PROJECT_DIR$/src/components/PlaceFormDialog.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Map.js" />
+        <option value="$PROJECT_DIR$/src/components/Snackbar.js" />
+        <option value="$PROJECT_DIR$/src/components/AppSnackbar.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/utils/config.js" />
       </list>
     </option>
   </component>
@@ -256,8 +257,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1280" />
-    <option name="y" value="-113" />
+    <option name="x" value="-359" />
+    <option name="y" value="-1058" />
     <option name="width" value="1920" />
     <option name="height" value="1058" />
   </component>
@@ -314,7 +315,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="Map&#9;null&#9;null&#10;App&#9;null&#9;null&#10;M&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Map.js&#10;Place&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.js&#10;PlaceForm&#9;null&#9;null&#10;Search&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.js&#10;cons&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/constants.js&#10;App.&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;packag&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;index&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/public/index.html&#10;c&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js&#10;config&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js" />
+    <property name="SearchEverywhereHistoryKey" value="App&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;Form&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Map&#9;null&#9;null&#10;M&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Map.js&#10;Place&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.js&#10;PlaceForm&#9;null&#9;null&#10;Search&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.js&#10;cons&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/constants.js&#10;App.&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;packag&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;index&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/public/index.html&#10;c&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js&#10;config&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -365,7 +366,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524182928602</updated>
-      <workItem from="1524182930257" duration="27825000" />
+      <workItem from="1524182930257" duration="35114000" />
     </task>
     <task id="LOCAL-00001" summary="Basic usage done">
       <created>1524235903515</created>
@@ -402,25 +403,32 @@
       <option name="project" value="LOCAL" />
       <updated>1524260522285</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix height styles">
+      <created>1524260915348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1524260915348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27825000" />
+    <option name="totallyTimeSpent" value="35114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-113" width="1920" height="1058" extended-state="6" />
+    <frame x="-359" y="-1058" width="1920" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1490258" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1490258" sideWeight="0.50619197" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15991692" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991692" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -464,7 +472,8 @@
     <MESSAGE value="Basic functionality added" />
     <MESSAGE value="Fix geolocation bug and finish place details" />
     <MESSAGE value="Finish frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish frontend" />
+    <MESSAGE value="Fix height styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix height styles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -505,15 +514,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Snackbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -536,28 +537,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ConfirmDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/images.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -605,51 +588,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/config.js">
+    <entry file="file://$PROJECT_DIR$/src/components/PlaceFormDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="85" column="4" lean-forward="true" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Place.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="312">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PlaceFormDialog.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ConfirmDialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1524272350153" expanded="true" signature="3695:4375" ph="..." />
+            <marker date="1524272350153" expanded="true" signature="3788:3974" ph="..." />
+            <marker date="1524272350153" expanded="true" signature="3991:4127" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Map.js">
+    <entry file="file://$PROJECT_DIR$/src/components/AppSnackbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="97" column="31" lean-forward="true" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="69" lean-forward="true" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

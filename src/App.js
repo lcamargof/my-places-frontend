@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import { Button, withStyles } from 'material-ui';
+import io from "socket.io-client";
+import Axios from 'axios';
 import HelpIcon from '@material-ui/icons/HelpOutline';
 import MainAppBar from './components/MainAppBar';
 import Map from './components/Map';
 import HelpDialog from './components/HelpDialog';
+import { API_URL } from './utils/config';
+import AppSnackbar from './components/AppSnackbar';
 
 const styles = theme => ({
   button: {
@@ -16,38 +20,76 @@ const styles = theme => ({
 
 class App extends Component {
   state = {
-    places: [
-      { id: 1, name: 'Awesome place', open: '00:00', close: '23:00', description: 'asdf', location: [-103.40932570000001, 20.6713195] },
-      { id: 2, name: 'OH GOD', open: '15:00', close: '16:00', description: 'asdf', location: [-103.41932570000001, 20.6713195] },
-      { id: 3, name: 'ROCKET!', open: '19:00', close: '20:00', description: 'adsdf', location: [-103.40932570000001, 20.6913195] },
-    ],
+    places: [],
     search: '',
     place: null,
     help: false,
     confirm: false,
     form: false,
+    snackbar: false,
     selected: null,
+    message: '',
   };
 
-  componentDidMount() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => (
-        this.setState({ location: [position.coords.longitude, position.coords.latitude] })
-      ));
+  async componentDidMount() {
+    // Listen to actions
+    this.socketActions();
+
+    // Fetch places
+    try {
+      const { data } = await Axios.get(`${API_URL}/api/places`);
+
+      if (data.success) {
+         this.setState({ places: data.data.map(p => {
+           p.location = [+p.lon, +p.lat];
+
+           return p;
+         }) });
+      }
+    } catch (e) {
+      console.error('error fetching places', e);
     }
   }
+
+  socketActions = () => {
+    const socket = io(API_URL);
+    // ADD
+    socket.on('add', this.addPlace);
+
+    // UPDATE
+    socket.on('update', this.updatePlace);
+
+    // REMOVE
+    socket.on('remove', this.removePlace);
+  };
 
   handleFilter = (place) => {
     this.setState({ place });
   };
 
-  handleAddPlace = (place) => {
-    place.id = Math.floor(Math.random() * 100000000);
-
+  addPlace = (place) => {
+    this.showSnackbar('Place Added!');
     this.setState(prevState => ({ places: [...prevState.places, place] }));
   };
 
-  handlePlaceUpdate = (place) => {
+  handleAddPlace = async (place) => {
+    try {
+      const { data } = await Axios.post(`${API_URL}/api/places`, place);
+
+      if (data.success) {
+        place.id = data.data.id;
+        this.addPlace(place);
+      } else {
+        this.showSnackbar('Error adding the place :(');
+      }
+    } catch (e) {
+      this.showSnackbar('Server error :(');
+    }
+  };
+
+  updatePlace = (place) => {
+    this.showSnackbar('Place updated!');
+
     const index = this.state.places.findIndex(p => p.id === place.id);
 
     this.setState(prevState => ({
@@ -59,8 +101,24 @@ class App extends Component {
     }))
   };
 
-  handlePlaceRemove = (place) => {
-    const index = this.state.places.findIndex(p => p.id === place.id);
+  handlePlaceUpdate = async  (place) => {
+    try {
+      const { data } = await Axios.put(`${API_URL}/api/places/${place.id}`, place);
+
+      if (data.success) {
+        this.updatePlace(place);
+      } else {
+        this.showSnackbar('Error updating the place :(');
+      }
+    } catch (e) {
+      this.showSnackbar('Server error :(');
+    }
+  };
+
+  removePlace = (id) => {
+    this.showSnackbar('Place removed :(');
+
+    const index = this.state.places.findIndex(p => p.id === id);
 
     this.setState(prevState => ({
       places: [
@@ -70,11 +128,31 @@ class App extends Component {
     }));
   };
 
+  handlePlaceRemove = async (place) => {
+    try {
+      const { data } = await Axios.delete(`${API_URL}/api/places/${place.id}`);
+
+      if (data.success) {
+        this.removePlace(place.id);
+      } else {
+        this.showSnackbar("The place doesn't want to be destroyed!")
+      }
+    } catch (e) {
+      this.showSnackbar('Server error :(');
+    }
+  };
+
   toggleHelp = help => this.setState({ help });
+
+  closeSnackbar = () => this.setState({ snackbar: false });
+
+  showSnackbar = (message) => {
+    this.setState({ message, snackbar: true })
+  };
 
   render() {
     const { classes } = this.props;
-    const { places, place, help } = this.state;
+    const { places, place, help, snackbar, message } = this.state;
 
     return (
       <div className="App">
@@ -96,6 +174,7 @@ class App extends Component {
           <HelpIcon />
         </Button>
         <HelpDialog open={help} onClose={() => this.toggleHelp(false)} />
+        <AppSnackbar text={message} open={snackbar} onClose={this.closeSnackbar} />
       </div>
     );
   }

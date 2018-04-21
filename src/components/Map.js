@@ -85,9 +85,38 @@ class Map extends Component {
     this.toggleForm(false);
   };
 
+  renderLayers = (places) => {
+    const layers = places.map(p => (
+      <Layer
+        key={p.id}
+        id={`${p.id}`}
+        type="symbol"
+        layout={{
+          "icon-image": "rocket-15",
+          "text-field": p.name,
+          "text-offset": [0, 1.5],
+          "icon-size": 1.8,
+        }}>
+        <Feature
+          onMouseEnter={e => this.onToggleHover('pointer', e)}
+          onMouseLeave={e => this.onToggleHover('', e)}
+          coordinates={p.location}
+          onClick={e => this.handleClick(e, p)}
+          draggable
+          onDragStart={this.onDrag}
+          onDragEnd={e => this.onDragEnd(e, p)}
+        />
+      </Layer>
+    ));
+
+    return layers;
+  };
+
   render() {
     const { location, place, zoom, type, confirm, form } = this.state;
     const { places } = this.props;
+
+    console.log(places);
 
     return (
       <React.Fragment>
@@ -103,28 +132,7 @@ class Map extends Component {
             width: "100vw",
           }}>
           {
-            places.map(p => (
-              <Layer
-                key={p.id}
-                id={`${p.id}`}
-                type="symbol"
-                layout={{
-                  "icon-image": "rocket-15",
-                  "text-field": p.name,
-                  "text-offset": [0, 1.5],
-                  "icon-size": 1.8,
-                }}>
-                <Feature
-                  onMouseEnter={e => this.onToggleHover('pointer', e)}
-                  onMouseLeave={e => this.onToggleHover('', e)}
-                  coordinates={p.location}
-                  onClick={e => this.handleClick(e, p)}
-                  draggable
-                  onDragStart={this.onDrag}
-                  onDragEnd={e => this.onDragEnd(e, p)}
-                />
-              </Layer>
-            ))
+            this.renderLayers(places)
           }
           {
             place && place.name && (
@@ -157,6 +165,7 @@ class Map extends Component {
 }
 
 Map.propTypes = {
+  places: PropTypes.array.isRequired,
   onDelete: PropTypes.func.isRequired,
   onUpdate: PropTypes.func.isRequired,
 };
