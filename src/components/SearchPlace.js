@@ -118,6 +118,8 @@ const SearchPlace = ({ classes, places, onFilter }) => {
 
 SearchPlace.propTypes = {
   classes: PropTypes.object.isRequired,
+  places: PropTypes.array.isRequired,
+  onFilter: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles)(SearchPlace);

@@ -21,6 +21,8 @@ const MainAppBar = ({ classes, ...props }) => (
 
 MainAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
+  places: PropTypes.array.isRequired,
+  onFilter: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles)(MainAppBar);

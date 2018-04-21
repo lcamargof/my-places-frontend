@@ -32,6 +32,7 @@ const styles = () => ({
     borderBottom: '1px solid #ccc',
     paddingBottom: '10px',
     fontSize: '14px',
+    wordWrap: 'break-word',
   },
   status: {
     textAlign: 'center',
@@ -63,6 +64,8 @@ const Place = ({ classes, place, onDelete, onEdit }) => {
 Place.propTypes = {
   place: PropTypes.object.isRequired,
   classes: PropTypes.object.isRequired,
+  onDelete: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles)(Place);

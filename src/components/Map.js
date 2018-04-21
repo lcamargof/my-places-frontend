@@ -116,8 +116,6 @@ class Map extends Component {
     const { location, place, zoom, type, confirm, form } = this.state;
     const { places } = this.props;
 
-    console.log(places);
-
     return (
       <React.Fragment>
         <MapBox
@@ -166,6 +164,8 @@ class Map extends Component {
 
 Map.propTypes = {
   places: PropTypes.array.isRequired,
+  onAdd: PropTypes.func.isRequired,
+  place: PropTypes.object,
   onDelete: PropTypes.func.isRequired,
   onUpdate: PropTypes.func.isRequired,
 };

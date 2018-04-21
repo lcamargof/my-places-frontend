@@ -76,10 +76,7 @@ class App extends Component {
     try {
       const { data } = await Axios.post(`${API_URL}/api/places`, place);
 
-      if (data.success) {
-        place.id = data.data.id;
-        this.addPlace(place);
-      } else {
+      if (!data.success) {
         this.showSnackbar('Error adding the place :(');
       }
     } catch (e) {
@@ -105,9 +102,7 @@ class App extends Component {
     try {
       const { data } = await Axios.put(`${API_URL}/api/places/${place.id}`, place);
 
-      if (data.success) {
-        this.updatePlace(place);
-      } else {
+      if (!data.success) {
         this.showSnackbar('Error updating the place :(');
       }
     } catch (e) {
@@ -118,7 +113,7 @@ class App extends Component {
   removePlace = (id) => {
     this.showSnackbar('Place removed :(');
 
-    const index = this.state.places.findIndex(p => p.id === id);
+    const index = this.state.places.findIndex(p => p.id === +id);
 
     this.setState(prevState => ({
       places: [
@@ -132,9 +127,7 @@ class App extends Component {
     try {
       const { data } = await Axios.delete(`${API_URL}/api/places/${place.id}`);
 
-      if (data.success) {
-        this.removePlace(place.id);
-      } else {
+      if (!data.success) {
         this.showSnackbar("The place doesn't want to be destroyed!")
       }
     } catch (e) {

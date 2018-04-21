@@ -29,7 +29,7 @@ const AppSnackbar = ({ classes, text, onClose, open }) => (
         aria-label="Close"
         color="inherit"
         className={classes.close}
-        onClick={this.handleClose}
+        onClick={onClose}
       >
         <CloseIcon />
       </IconButton>,
@@ -39,6 +39,9 @@ const AppSnackbar = ({ classes, text, onClose, open }) => (
 
 AppSnackbar.propTypes = {
   classes: PropTypes.object.isRequired,
+  text: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+  open: PropTypes.bool.isRequired,
 };
 
 export default withStyles(styles)(AppSnackbar);

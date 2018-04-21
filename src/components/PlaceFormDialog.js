@@ -177,6 +177,7 @@ PlaceFormDialog.propTypes = {
   classes: PropTypes.object.isRequired,
   onClose: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 PlaceFormDialog.defaultProps = {
