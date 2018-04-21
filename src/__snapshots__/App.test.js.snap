@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container: App Snapshots Should render correctly 1`] = `
+<div
+  className="App"
+>
+  <WithStyles(MainAppBar)
+    onFilter={[Function]}
+    places={Array []}
+  />
+  <Map
+    onAdd={[Function]}
+    onDelete={[Function]}
+    onUpdate={[Function]}
+    place={null}
+    places={Array []}
+  />
+  <WithStyles(Button)
+    aria-label="help"
+    color="primary"
+    id="help"
+    onClick={[Function]}
+    variant="fab"
+  >
+    <pure(HelpOutline) />
+  </WithStyles(Button)>
+  <HelpDialog
+    onClose={[Function]}
+    open={false}
+  />
+  <WithStyles(Component)
+    onClose={[Function]}
+    open={false}
+    text=""
+  />
+</div>
+`;
