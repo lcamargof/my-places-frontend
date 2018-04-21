@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cc0f62f8-c87f-497f-9251-20c8e3e95762" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPlace.test.js" afterPath="$PROJECT_DIR$/src/components/SearchPlace.test.js" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/__snapshots__/App.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/AppSnackbar.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/ConfirmDialog.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/HelpDialog.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/MainAppBar.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/Map.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/Place.test.js.snap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/PlaceFormDialog.test.js.snap" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -107,8 +115,8 @@
           <file leaf-file-name="SearchPlace.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/SearchPlace.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+                <state relative-caret-position="215">
+                  <caret line="95" column="7" lean-forward="true" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="7" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -213,7 +221,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SearchPlace.test.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SearchPlace.test.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/SearchPlace.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
@@ -237,11 +245,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+                <state relative-caret-position="162">
+                  <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -299,7 +307,6 @@
         <option value="$PROJECT_DIR$/src/components/SearchPlace.js" />
         <option value="$PROJECT_DIR$/src/components/Map.js" />
         <option value="$PROJECT_DIR$/src/components/HelpDialog.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/PlaceFormDialog.test.js" />
         <option value="$PROJECT_DIR$/src/components/PlaceFormDialog.js" />
         <option value="$PROJECT_DIR$/src/components/Map.test.js" />
@@ -308,6 +315,7 @@
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/SearchPlace.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -367,20 +375,7 @@
               <item name="my-places-frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-places-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-places-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-places-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-places-frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-places-frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -393,7 +388,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="READ&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/README.md&#10;App&#9;null&#9;null&#10;Place.te&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;Place&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;PlaceF&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Searc&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;packa&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;HelpD&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.js&#10;Search&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;HelpDi&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.test.js&#10;pack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;Snack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/AppSnackbar.js&#10;Form&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Map&#9;null&#9;null&#10;M&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Map.js&#10;PlaceForm&#9;null&#9;null&#10;cons&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/constants.js&#10;App.&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;packag&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;index&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/public/index.html&#10;c&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js&#10;config&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js" />
+    <property name="SearchEverywhereHistoryKey" value="pack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;READ&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/README.md&#10;App&#9;null&#9;null&#10;Place.te&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;Place&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;PlaceF&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Searc&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;packa&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;HelpD&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.js&#10;Search&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;HelpDi&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.test.js&#10;Snack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/AppSnackbar.js&#10;Form&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Map&#9;null&#9;null&#10;M&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Map.js&#10;PlaceForm&#9;null&#9;null&#10;cons&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/constants.js&#10;App.&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;packag&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;index&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/public/index.html&#10;c&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js&#10;config&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
   </component>
   <component name="RecentsManager">
@@ -477,8 +472,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="npm.test" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.Component: SearchPlace" />
-        <item index="2" class="java.lang.String" itemvalue="npm.update:snapshots" />
+        <item index="1" class="java.lang.String" itemvalue="npm.update:snapshots" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.Component: SearchPlace" />
         <item index="3" class="java.lang.String" itemvalue="Jest.Container: App" />
         <item index="4" class="java.lang.String" itemvalue="npm.start" />
       </list>
@@ -497,7 +492,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524182928602</updated>
-      <workItem from="1524182930257" duration="50011000" />
+      <workItem from="1524182930257" duration="50326000" />
     </task>
     <task id="LOCAL-00001" summary="Basic usage done">
       <created>1524235903515</created>
@@ -590,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524329210369</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fix tests">
+      <created>1524329761251</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1524329761251</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -602,21 +604,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50011000" />
+    <option name="totallyTimeSpent" value="50326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="728" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22478157" sideWeight="0.4722222" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22478157" sideWeight="0.45637584" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3744076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3744076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22478157" sideWeight="0.5277778" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22478157" sideWeight="0.54362416" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24328594" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.764613" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -668,7 +669,8 @@
     <MESSAGE value="Add unit testing and circleci" />
     <MESSAGE value="Fix readme" />
     <MESSAGE value="add snapshot" />
-    <option name="LAST_COMMIT_MESSAGE" value="add snapshot" />
+    <MESSAGE value="Fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,14 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PlaceFormDialog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -991,8 +985,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SearchPlace.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+        <state relative-caret-position="215">
+          <caret line="95" column="7" lean-forward="true" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1006,6 +1000,14 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

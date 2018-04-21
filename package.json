@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "update:snapshots": "jest --updateSnapshot"
+    "update:snapshots": "jest --env=jsdom --updateSnapshot"
   },
   "devDependencies": {
     "@types/jest": "^22.2.3"
