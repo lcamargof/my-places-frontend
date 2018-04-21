@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0f62f8-c87f-497f-9251-20c8e3e95762" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AppSnackbar.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.js" afterPath="$PROJECT_DIR$/src/components/Map.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Snackbar.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/src/utils/config.js" afterPath="$PROJECT_DIR$/src/utils/config.js" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34653464">
+    <splitter split-orientation="horizontal" split-proportion="0.88799506">
       <split-first>
         <leaf>
           <file leaf-file-name="Place.js" pinned="false" current-in-tab="false">
@@ -49,22 +44,27 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/utils/config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="69" lean-forward="true" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="130" lean-forward="true" selection-start-line="1" selection-start-column="130" selection-end-line="1" selection-end-column="130" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/utils/utils.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
-                  <folding />
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="120">
+                    <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+                    <folding />
+                  </first_editor>
+                  <second_editor>
+                    <js_state />
+                  </second_editor>
                 </state>
               </provider>
             </entry>
@@ -241,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/components/Snackbar.js" />
         <option value="$PROJECT_DIR$/src/components/AppSnackbar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/utils/config.js" />
       </list>
     </option>
@@ -366,7 +367,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524182928602</updated>
-      <workItem from="1524182930257" duration="35114000" />
+      <workItem from="1524182930257" duration="35305000" />
     </task>
     <task id="LOCAL-00001" summary="Basic usage done">
       <created>1524235903515</created>
@@ -410,11 +411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524260915348</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Backend connected">
+      <created>1524273357917</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524273357917</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35114000" />
+    <option name="totallyTimeSpent" value="35305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-359" y="-1058" width="1920" height="1058" extended-state="6" />
@@ -473,7 +481,8 @@
     <MESSAGE value="Fix geolocation bug and finish place details" />
     <MESSAGE value="Finish frontend" />
     <MESSAGE value="Fix height styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix height styles" />
+    <MESSAGE value="Backend connected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend connected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,9 +667,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="69" lean-forward="true" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+        <state relative-caret-position="15">
+          <caret line="1" column="130" lean-forward="true" selection-start-line="1" selection-start-column="130" selection-end-line="1" selection-end-column="130" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
