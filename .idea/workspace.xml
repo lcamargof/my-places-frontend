@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0f62f8-c87f-497f-9251-20c8e3e95762" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.circleci/config.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/AppSnackbar.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/ConfirmDialog.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/HelpDialog.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/MainAppBar.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Map.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Place.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/PlaceFormDialog.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/SearchPlace.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/AppSnackbar.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/ConfirmDialog.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/HelpDialog.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/MainAppBar.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/Map.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/Place.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/__snapshots__/PlaceFormDialog.test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/setupTests.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="$PROJECT_DIR$/src/App.test.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppSnackbar.js" afterPath="$PROJECT_DIR$/src/components/AppSnackbar.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConfirmDialog.js" afterPath="$PROJECT_DIR$/src/components/ConfirmDialog.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelpDialog.js" afterPath="$PROJECT_DIR$/src/components/HelpDialog.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainAppBar.js" afterPath="$PROJECT_DIR$/src/components/MainAppBar.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.js" afterPath="$PROJECT_DIR$/src/components/Map.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Place.js" afterPath="$PROJECT_DIR$/src/components/Place.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/PlaceFormDialog.js" afterPath="$PROJECT_DIR$/src/components/PlaceFormDialog.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPlace.js" afterPath="$PROJECT_DIR$/src/components/SearchPlace.js" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,16 +19,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.6282764">
       <split-first>
         <leaf>
-          <file leaf-file-name="Place.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Place.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
-                  <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="AppSnackbar.test.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/AppSnackbar.test.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -105,12 +67,27 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
-                  <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+                <state relative-caret-position="271">
+                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="120">
+                    <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+                    <folding />
+                  </first_editor>
+                  <second_editor>
+                    <js_state />
+                  </second_editor>
                 </state>
               </provider>
             </entry>
@@ -306,7 +283,6 @@
         <option value="$PROJECT_DIR$/src/utils/images.js" />
         <option value="$PROJECT_DIR$/src/components/Snackbar.js" />
         <option value="$PROJECT_DIR$/src/utils/config.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/setupTest.js" />
         <option value="$PROJECT_DIR$/src/components/AppSnackbar.js" />
@@ -329,6 +305,7 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/App.test.js" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -408,7 +385,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="App&#9;null&#9;null&#10;Place.te&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;Place&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;PlaceF&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Searc&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;packa&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;HelpD&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.js&#10;Search&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;HelpDi&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.test.js&#10;pack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;Snack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/AppSnackbar.js&#10;Form&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Map&#9;null&#9;null&#10;M&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Map.js&#10;PlaceForm&#9;null&#9;null&#10;cons&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/constants.js&#10;App.&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;packag&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;index&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/public/index.html&#10;c&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js&#10;config&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js" />
+    <property name="SearchEverywhereHistoryKey" value="READ&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/README.md&#10;App&#9;null&#9;null&#10;Place.te&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;Place&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Place.test.js&#10;PlaceF&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Searc&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;packa&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;HelpD&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.js&#10;Search&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/SearchPlace.test.js&#10;HelpDi&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/HelpDialog.test.js&#10;pack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;Snack&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/AppSnackbar.js&#10;Form&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/PlaceFormDialog.js&#10;Map&#9;null&#9;null&#10;M&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/components/Map.js&#10;PlaceForm&#9;null&#9;null&#10;cons&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/constants.js&#10;App.&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/App.js&#10;packag&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/package.json&#10;index&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/public/index.html&#10;c&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js&#10;config&#9;FILE&#9;file:///Users/luis.camargo/projects/my-places-frontend/src/utils/config.js" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
   </component>
   <component name="RecentsManager">
@@ -499,7 +476,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524182928602</updated>
-      <workItem from="1524182930257" duration="49430000" />
+      <workItem from="1524182930257" duration="49460000" />
     </task>
     <task id="LOCAL-00001" summary="Basic usage done">
       <created>1524235903515</created>
@@ -571,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524276225383</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add unit testing and circleci">
+      <created>1524329052292</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1524329052292</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -580,7 +564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49430000" />
+    <option name="totallyTimeSpent" value="49460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="728" extended-state="6" />
@@ -643,7 +627,8 @@
     <MESSAGE value="Fix config" />
     <MESSAGE value="Added README" />
     <MESSAGE value="Fix socket io and cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix socket io and cleanup" />
+    <MESSAGE value="Add unit testing and circleci" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit testing and circleci" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -671,19 +656,6 @@
     <entry file="file://$PROJECT_DIR$/src/logo.svg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/config.js">
@@ -976,9 +948,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="271">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>

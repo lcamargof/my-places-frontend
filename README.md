@@ -6,7 +6,7 @@ Simple Map? to store and manage your favorite awesome places!!!
 
 - `npm start` to bootstrap the application into `localhost:5000`
 - `npm build` to make the production build into the /build folder
-- `npm test` to run the unit tests (TODO!!)
+- `npm test` to run the unit tests
 
 ### Libraries used
 
