@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment/moment';
 import ReactMapboxGl, { Layer, Feature, Popup } from "react-mapbox-gl";
 import { DEFAULT_COORDINATES, MAPBOX_TOKEN } from '../utils/config';
 import Place from './Place';
@@ -89,32 +90,37 @@ class Map extends Component {
     this.toggleForm(false);
   };
 
-  renderLayers = (places) => {
-    const layers = places.map(p => (
-      <Layer
-        key={p.id}
-        id={`${p.id}`}
-        type="symbol"
-        layout={{
-          "icon-image": "rocket-15",
-          "text-field": p.name,
-          "text-offset": [0, 1.5],
-          "icon-size": 1.8,
-        }}>
-        <Feature
-          onMouseEnter={e => this.onToggleHover('pointer', e)}
-          onMouseLeave={e => this.onToggleHover('', e)}
-          coordinates={p.location}
-          onClick={e => this.handleClick(e, p)}
-          draggable
-          onDragStart={this.onDrag}
-          onDragEnd={e => this.onDragEnd(e, p)}
-        />
-      </Layer>
-    ));
+  renderLayers = (places) => (
+    places.map((p) => {
+      const open = moment().isBetween(moment(p.open, 'HH:mm'), moment(p.close, 'HH:mm'), 'hours', '[]');
 
-    return layers;
-  };
+      return (
+        <Layer
+          key={p.id}
+          id={`${p.id}`}
+          type="symbol"
+          paint={{
+            "text-color": open ? "green" : "red"
+          }}
+          layout={{
+            "icon-image": "rocket-15",
+            "text-field": p.name,
+            "text-offset": [0, 1.5],
+            "icon-size": 1.8,
+          }}>
+          <Feature
+            onMouseEnter={e => this.onToggleHover('pointer', e)}
+            onMouseLeave={e => this.onToggleHover('', e)}
+            coordinates={p.location}
+            onClick={e => this.handleClick(e, p)}
+            draggable
+            onDragStart={this.onDrag}
+            onDragEnd={e => this.onDragEnd(e, p)}
+          />
+        </Layer>
+      );
+    })
+  );
 
   render() {
     const { location, place, zoom, type, confirm, form } = this.state;
